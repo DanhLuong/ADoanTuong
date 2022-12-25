@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Instrument Tools</title>
+    <meta name="description" content="Instrument page">
+    <meta name="author" content="pcmadder">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/scripts.js"></script>
+</head>
+
+<body>
+    <div id="overall">
+        <!--This is bavbar-info-->
+        <nav class="navbar" id="nav1">
+            <ul>
+                <li>
+                    <a href="../about.html">About</a>
+                </li>
+                <li>
+                    <a href="../contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="../disclaimer.html">Disclaimer</a>
+                </li>
+                <li>
+                    <a href="../subcribe.html">Subcribe</a>
+                </li>
+                <li>
+                    <a href="../forum.html">Forum</a>
+                </li>
+                <li>
+                    <a href="../donate.html">Donate</a>
+                </li>
+                <li>
+                    <a href="../youtube.html">Youtube</a>
+                </li>
+            </ul>
+        </nav>
+        <!--This is bavbar-articles-->
+        <nav class="navbar" id="nav2">
+            <a href="../index.html" id="logo">INS TOOLS</a>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropdbtn" href="courses.html">Courses</a>
+                    <div class="dropdown_content">
+                        <a href="../courses/course1.html">Course 1</a>
+                        <a href="../courses/course2.html">Course 2</a>
+                        <a href="../courses/course3.html">Course 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdbtn" href="video.html">Video</a>
+                    <div class="dropdown_content">
+                        <a href="../video/video_SCADA.html">SCADA</a>
+                        <a href="../video/video_Automation.html">Automation</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdbtn" href="measure.html">Measure</a>
+                    <div class="dropdown_content">
+                        <a href="../measure/pressure.html">Pressure</a>
+                        <a href="../measure/temperature.html">Temperature</a>
+                        <a href="../measure/ph.html">pH</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdbtn" href="control.html">Control</a>
+                    <div class="dropdown_content">
+                        <a href="../control/control1.html">Control 1</a>
+                        <a href="../control/control2.html">Control 2</a>
+                        <a href="../control/control3.html">Control 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdbtn" href="">More</a>
+                    <div class="dropdown_content">
+                        <a href="../more/more1.html">More 1</a>
+                        <a href="../more/more2.html">More 2</a>
+                        <a href="../more/more3.html">More 3</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!--This is display card for article content-->
+        <div id="content_container">
+            <div id="content_section" class="card">
+                <h2>3-SCADA System Vulnerabilities</h2>
+                <p class="overview">
+                    In this post, we will see some general types of vulnerabilities faced in a SCADA
+                    system that will help you properly deal with them.
+                </p><br />
+                <img src="../images/SCADA-System-Vulnerabilities-2048x1152.webp" alt="robot" width="100%">
+                <p>
+                    SCADA is a very important tool in industrial automation. It is the very first big step in
+                    interfacing
+                    data with other highly advanced networks like the cloud, IoT, ERP, and MES.
+
+                    But, you know that such a large amount of data handling and network interfaces also bring some
+                    vulnerabilities and threats to the system. You have to be extra careful when dealing with SCADA
+                    systems.
+
+                    The most common vulnerabilities of a Supervisory control and data acquisition system are mentioned
+                    below.
+
+                    1.Cyber Security
+                    2.External Connections
+                    3.Open Coding
+                    4.Weak 21CFR Scripting
+                    5.Legacy Software
+                    6.Default Settings
+                    7.DDoS attacks
+                </p><br />
+                <h3>Cyber Security</h3>
+                <p>
+                    This is the first and foremost main threat to a SCADA system. You must have seen many recent cases
+                    where a SCADA system was hacked and data was leaked. This is very dangerous for a system because a
+                    hacker can stop the entire system and if the system was very critical, then it could be
+                    life-threatening too.
+                </p><br />
+                <p class="bold">Free Cyber Security Course: </p><a href="" class="current_red inline">Join course</a>
+                <p>
+                    Attacks can be raised from either the hardware or software. If the hardware PC used is not updated
+                    by Windows frequently, then there are chances that it will miss key security updates. This can also
+                    include network updates. It is the first step in hacking.
+
+                    Software used for SCADA also comes in updated patches. If it is possible, timely communication must
+                    be given to the client to update the patch. If it is costly, then it’s a thing of the client; but it
+                    will be better to spend some extra penny instead of wasting your whole system.
+
+                    If the designer has developed poor SCADA network settings, then it is his job to rectify them. Also,
+                    with the help of external IT policies, a computer can be made secured. The programmer must properly
+                    set data historians, OPC servers, SQL servers, and VPN services.
+                </p><br />
+                <h3>External Connections</h3>
+                <p>
+                    SCADA deals with many number of PLC’s. The very first step is that the SCADA must securely deal with
+                    data with respect to <a href="" class="current_red">PLC</a>. It must be tried to avoid open access to SCADA
+                    from PLC.
+
+                    Communication driver settings (for PLC) in SCADA have security features to keep the network and data
+                    transfer intact and strong.
+
+                    Nowadays, modern PLCs have <a href="" class="current_red">cyber security</a> settings. This can help in the
+                    proper and secure data
+                    flow.
+                </p><br />
+                <h3>Open Coding</h3>
+                <p>
+                    If the SCADA scripts, screens, and other settings are open, then an external hacker can access the
+                    data and try to modify it. So, always keep the SCADA backup password-protected.
+
+                    Mostly, <a href="" class="current_red">SCADA software</a> does not have a single password, like PLC. You have
+                    options to set different
+                    passwords for different things.
+                    So, password complexity is a must in maintaining good security; and it is a little bit more
+                    cumbersome than PLC security. This will ensure that your codes are not open and they remain secure.
+                </p><br />
+                <h3>Weak 21CFR Scripting</h3>
+                <p>
+                    <a href="" class="current_red">21CFR and GAMP5</a> are very important standards for SCADA in the food,
+                    beverage, and pharmaceutical
+                    industries. This helps in the accurate monitoring, tracking, and observation of data in SCADA.
+
+                    If the scripting of this program is weak, then unwanted access to data will not be tracked and the
+                    company will then not be able to identify who did the wrong action and how it was done.
+
+                    So, if you are using 21CFR, make sure that its program developed is very strong so that there are
+                    rare chances of bugs and it will run successfully.
+                </p><br />
+                <h3>Legacy Software</h3>
+                <p>
+                    There are a very large number of SCADA systems that run on legacy software. A legacy system is
+                    outdated computing software/hardware that is still in use. The system still meets the needs it was
+                    originally designed for but doesn’t allow for growth.
+
+                    A legacy system’s older technology won’t allow it to interact with newer systems. There are many
+                    reasons for this like costs, difficulties in migrating to new technology, etc.
+
+                    Due to all this, there are chances of high-security concerns in these software (like user/system
+                    authentication and data integrity checking features). This exposes the system to a wide range of
+                    cyber-attacks.
+                </p><br />
+                <h3>Default Settings</h3>
+                <p>
+                    Many programmers just run the SCADA systems with the default settings provided by the manufacturer.
+                    If they bypass the network and other critical settings, then it is very risky to run the system with
+                    such settings. So, always look for the meaning of all the settings and if required, try to change
+                    the necessary ones.
+                </p><br />
+                <h3>DDoS attacks</h3>
+                <p>
+                    A distributed denial-of-service (DDoS) attack is a malicious attempt to disrupt the normal traffic
+                    of a targeted server, service, or network by overwhelming the target or its surrounding
+                    infrastructure with a flood of Internet traffic.
+
+                    DDoS attacks achieve effectiveness by utilizing multiple compromised computer systems as sources of
+                    attack traffic. Exploited machines can include computers and other networked resources such as IoT
+                    devices. It could be very easy for hackers to locate these systems by using specific search engines
+                    like Shodan. The popular search engine allows attackers to retrieve all the information that could
+                    be used to find a potential target exposed online.
+
+                    In this way, we understand some general vulnerabilities faced in a SCADA system.
+                    If you liked this article, then please subscribe to our YouTube Channel for Instrumentation,
+                    Electrical, PLC, and SCADA video tutorials.
+
+                    You can also follow us on Facebook and Twitter to receive daily updates.
+                    Source: ABC_XYZ
+                </p><br />
+            </div>
+            <div id="more-info" class="card">
+                <h3>More articles:</h3>
+                <ul id="more-info-list">
+                    <li>
+                        <a href="name1.html">Article1</a>
+                    </li>
+                    <li>
+                        <a href="name2.html">Article2</a>
+                    </li>
+                    <li>
+                        <a href="name4.html">Article4</a>
+                    </li>
+                    <li>
+                        <a href="name5.html">Article5</a>
+                    </li>
+                    <li>
+                        <a href="">Article?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--This is footer-->
+        <footer>
+            <p class="footer">2022 © Reproduction without explicit permission is prohibited. - PLC SCADA Courses - Doan
+                Tuong </p>
+            <div class="footer"><a href="mailto:chrsiken125@gmail.com">Web powered by PCMADDER</a></div>
+        </footer>
+    </div>
+</body>
+
+</html>

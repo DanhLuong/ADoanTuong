@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Instrument Tools</title>
+    <meta name="description" content="Instrument page">
+    <meta name="author" content="pcmadder">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/scripts.js"></script>
+</head>
+
+<body>
+    <div id="overall">
+        <!--This is bavbar-info-->
+        <nav class="navbar" id="nav1">
+            <ul>
+                <li>
+                    <a href="../about.html">About</a>
+                </li>
+                <li>
+                    <a href="../contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="../disclaimer.html">Disclaimer</a>
+                </li>
+                <li>
+                    <a href="../subcribe.html">Subcribe</a>
+                </li>
+                <li>
+                    <a href="../forum.html">Forum</a>
+                </li>
+                <li>
+                    <a href="../donate.html">Donate</a>
+                </li>
+                <li>
+                    <a href="../youtube.html">Youtube</a>
+                </li>
+            </ul>
+        </nav>
+        <!--This is bavbar-articles-->
+        <nav class="navbar" id="nav2">
+            <a href="../index.html" id="logo">INS TOOLS</a>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropdbtn" href="../courses.html">Courses</a>
+                    <div class="dropdown_content">
+                        <a href="../courses/course1.html">Course 1</a>
+                        <a href="../courses/course2.html">Course 2</a>
+                        <a href="../courses/course3.html">Course 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdbtn" href="../video.html">Video</a>
+                    <div class="dropdown_content">
+                        <a href="../video/video_SCADA.html">SCADA</a>
+                        <a href="../video/video_Automation.html">Automation</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdbtn" href="../measure.html">Measure</a>
+                    <div class="dropdown_content">
+                        <a href="pressure.html">Pressure</a>
+                        <a href="">Temperature</a>
+                        <a href="voltage.html">Voltage</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdbtn" href="../control.html">Control</a>
+                    <div class="dropdown_content">
+                        <a href="../control/control1.html">Control 1</a>
+                        <a href="../control/control2.html">Control 2</a>
+                        <a href="../control/control3.html">Control 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdbtn" href="">More</a>
+                    <div class="dropdown_content">
+                        <a href="../more/more1.html">More 1</a>
+                        <a href="../more/more2.html">More 2</a>
+                        <a href="../more/more3.html">More 3</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!--This is display card for articles-->
+        <div id="content_container">
+            <div id="content_section" class="card">
+                <h2>Temperature Covert Tool</h2>
+                    <button id="tempConvertButton" class="converBtn" onclick="convertFC()">Convert</button>
+                    <button id="tempSaveButton" class="saveRecordBtn" onclick="tempSaveRecord()">Save Record</button>
+                    <button id="tempDeleteButton" class="deleteRecordBtn" onclick="tempDeleteRecord()">Delete Record</button>
+                    <div class="space"></div>
+                    <label for="tempinput">Input: </label>
+                    <input type="text" id="tempinput" name="tempinput" onchange="tempChangeTracking()">
+                    <select name="tempUnit" id="tempConvert">
+                        <option value="FtoC">F-->C</option>
+                        <option value="CtoF">C-->F</option>
+                    </select>
+                    <label for="tempoutput">Output: </label>
+                    <input type="text" id="tempoutput" name="tempoutput">
+                    <div class="space" id="validate" style="color: red;"></div>
+                    <div id="tempRecord"></div>
+            </div>
+            <div id="more-info" class="card">
+                <h3>More articles:</h3>
+                <ul id="more-info-list">
+                    <li>
+                        <a href="">Article1</a>
+                    </li>
+                    <li>
+                        <a href="">Article2</a>
+                    </li>
+                    <li>
+                        <a href="">Article3</a>
+                    </li>
+                    <li>
+                        <a href="">Article4</a>
+                    </li>
+                    <li>
+                        <a href="">Article5</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--This is footer-->
+        <footer>
+            <p class="footer">2022 © Reproduction without explicit permission is prohibited. - PLC SCADA Courses - Doan
+                Tuong </p>
+            <div class="footer"><a href="mailto:chrsiken125@gmail.com">Web powered by PCMADDER</a></div>
+        </footer>
+    </div>
+</body>
+
+</html>
